@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asad Uz Zaman — CSE Student & Developer</title>
+  <meta name="description"
+    content="Portfolio of Asad Uz Zaman — B.Sc CSE student at East Delta University, developer, data science enthusiast, and quick learner. Explore projects, skills, and achievements." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="author" content="Asad Uz Zaman" />
+  <meta name="keywords" content="Asad Uz Zaman, portfolio, CSE, East Delta University, developer, data science, Bangladesh" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Asad Uz Zaman — CSE Student & Developer" />
+  <meta property="og:description" content="B.Sc CSE student at East Delta University. Data science enthusiast, quick learner, and problem solver." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dragneel-leo.github.io/portfolio/" />
+  <meta property="og:image" content="https://dragneel-leo.github.io/portfolio/avatar.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Asad Uz Zaman — CSE Student & Developer" />
+  <meta name="twitter:description" content="B.Sc CSE student at East Delta University. Data science enthusiast, quick learner, and problem solver." />
+  <meta name="twitter:image" content="https://dragneel-leo.github.io/portfolio/avatar.jpg" />
+  <meta name="twitter:creator" content="@Asadleo69" />
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-initials">
+        <span class="init-letter" style="animation-delay:0s">Z</span>
+        <span class="init-letter" style="animation-delay:0.15s">A</span>
+        <span class="init-letter" style="animation-delay:0.3s">M</span>
+        <span class="init-letter" style="animation-delay:0.45s">A</span>
+        <span class="init-letter" style="animation-delay:0.6s">N</span>
+      </div>
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <p class="loader-text">INITIALIZING SYSTEM...</p>
+    </div>
+  </div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>ZAMAN<span class="logo-bracket">/&gt;</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link" data-text="About">About</a>
+      <a href="#techstack" class="nav-link" data-text="Tech">Tech</a>
+      <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+      <a href="#experience" class="nav-link" data-text="Experience">Experience</a>
+      <a href="#achievements" class="nav-link" data-text="Achievements">Achievements</a>
+      <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-glitch-line"></div>
+      <p class="hero-greeting">
+        <span class="greeting-decorator">// </span>Hello, World. I'm
+      </p>
+      <h1 class="hero-name">
+        <span class="name-text gradient-text">Asad Uz Zaman</span>
+      </h1>
+      <div class="hero-role-wrapper">
+        <span class="role-prefix">&#9654; </span>
+        <span class="hero-role" id="heroRole"></span>
+        <span class="hero-cursor-blink">|</span>
+      </div>
+      <p class="hero-tagline">Quick learner, enthusiast, and eager to build the future.</p>
+      <div class="hero-cta-group">
+        <a href="#projects" class="btn btn-primary" id="ctaBtn">
+          <span class="btn-glow"></span>
+          <span class="btn-text">View My Work</span>
+          <i class="fa-solid fa-arrow-right btn-icon"></i>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span class="btn-text">Get In Touch</span>
+        </a>
+      </div>
+      <div class="hero-scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </div>
+    <!-- Decorative grid overlay -->
+    <div class="hero-grid-overlay"></div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title reveal-up">
+        <span class="section-number">01.</span>
+        <span class="gradient-text">About Me</span>
+        <span class="title-line"></span>
+      </h2>
+      <div class="about-grid">
+        <div class="about-avatar-wrapper reveal-left">
+          <div class="avatar-frame">
+            <div class="avatar-holo-ring ring-1"></div>
+            <div class="avatar-holo-ring ring-2"></div>
+            <div class="avatar-holo-ring ring-3"></div>
+            <div class="avatar-image">
+              <img src="avatar.jpg" alt="Asad Uz Zaman" class="avatar-photo" />
+            </div>
+            <div class="avatar-scanline"></div>
+          </div>
+          <div class="avatar-status">
+            <span class="status-dot"></span> Available for opportunities
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <p class="about-bio">
+            I'm studying <span class="highlight">B.Sc in Computer Science &amp; Engineering</span>
+            at <span class="highlight">East Delta University</span>, Chattogram, Bangladesh.
+            I'm a quick learner, enthusiast, and eager to learn new things &mdash;
+            from <span class="highlight">data science</span> to
+            <span class="highlight">web development</span> and beyond.
+          </p>
+          <p class="about-bio">
+            Currently in my 6th semester with a GPA of <span class="highlight">3.97/4.00</span>,
+            I love participating in hackathons, exploring AI/ML, and building
+            real-world solutions that make an impact. Always shipping, always learning.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-target="3">0</span><span class="stat-plus">.</span><span class="stat-label"
+                style="font-family:var(--font-heading);font-size:1.4rem;color:var(--cyan);display:inline">97</span>
+              <span class="stat-label">GPA / 4.00</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="6">0</span><span class="stat-plus">th</span>
+              <span class="stat-label">Semester</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="1">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Hackathons</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+          <div class="skills-section">
+            <h3 class="skills-heading">Core Competencies</h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>C Programming</span><span>85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Python &amp; Data Science</span><span>80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>SQL &amp; Databases</span><span>75%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Web Development</span><span>70%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="70"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Microsoft Office Suite</span><span>90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TECH STACK ==================== -->
+  <section class="section techstack" id="techstack">
+    <div class="container">
+      <h2 class="section-title reveal-up">
+        <span class="section-number">02.</span>
+        <span class="gradient-text">Tech Stack</span>
+        <span class="title-line"></span>
+      </h2>
+      <p class="section-subtitle reveal-up">Technologies I work with daily.</p>
+      <div class="tech-grid" id="techGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal-up">
+        <span class="section-number">03.</span>
+        <span class="gradient-text">Projects</span>
+        <span class="title-line"></span>
+      </h2>
+      <p class="section-subtitle reveal-up">Featured builds from my workshop.</p>
+      <div class="project-filters reveal-up" id="projectFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="cli">CLI</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE / EDUCATION ==================== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal-up">
+        <span class="section-number">04.</span>
+        <span class="gradient-text">Journey</span>
+        <span class="title-line"></span>
+      </h2>
+      <div class="timeline" id="timeline">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACHIEVEMENTS ==================== -->
+  <section class="section achievements" id="achievements">
+    <div class="container">
+      <h2 class="section-title reveal-up">
+        <span class="section-number">05.</span>
+        <span class="gradient-text">Achievements</span>
+        <span class="title-line"></span>
+      </h2>
+      <div class="achievements-grid" id="achievementsGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal-up">
+        <span class="section-number">06.</span>
+        <span class="gradient-text">Get In Touch</span>
+        <span class="title-line"></span>
+      </h2>
+      <p class="section-subtitle reveal-up">Have a project in mind? Let's build something extraordinary.</p>
+      <div class="contact-grid">
+        <form class="contact-form glass-card reveal-left" id="contactForm">
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" placeholder="John Doe" required />
+            <span class="input-glow"></span>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" placeholder="john@example.com" required />
+            <span class="input-glow"></span>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" placeholder="Project Collaboration" />
+            <span class="input-glow"></span>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" rows="5" placeholder="Tell me about your idea..." required></textarea>
+            <span class="input-glow"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span class="btn-glow"></span>
+            <span class="btn-text">Send Message</span>
+            <i class="fa-solid fa-paper-plane btn-icon"></i>
+          </button>
+        </form>
+        <div class="contact-info reveal-right">
+          <div class="contact-info-card glass-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Chattogram, Bangladesh</p>
+            </div>
+          </div>
+          <div class="contact-info-card glass-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>zamanasad1481@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/DRAGNEEL-LEO" target="_blank" rel="noopener" class="social-link"
+              aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/asadleo/" target="_blank" rel="noopener" class="social-link"
+              aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://x.com/Asadleo69" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="mailto:zamanasad1481@gmail.com" class="social-link" aria-label="Email">
+              <i class="fa-solid fa-at"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; Built by <span class="gradient-text">Asad Uz Zaman</span> &mdash; &copy; 2026</p>
+      <p class="footer-sub">Powered by caffeine, curiosity, and clean code.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
